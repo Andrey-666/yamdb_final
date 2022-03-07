@@ -1,8 +1,8 @@
-from rest_framework import exceptions, serializers
-from reviews.models import Category, Genre, Title, Review, Comment
-from users.models import User
 from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
+from reviews.models import Category, Genre, Title, Review, Comment
+from users.models import User
+from rest_framework import exceptions, serializers
 
 
 class CategorySerializer(serializers.ModelSerializer):
